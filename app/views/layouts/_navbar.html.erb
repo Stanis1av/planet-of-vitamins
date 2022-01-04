@@ -18,13 +18,13 @@
         <div class="btn-toolbar" role="toolbar">
         <% if user_signed_in? %>
 
-          <%= button_to 'Редактировать аккаунт', edit_user_registration_path, class: "btn btn-outline-warning", method: :get, data: { turbo: "false" } %>
+          <%= link_to 'Редактировать аккаунт', edit_user_registration_path, class: "btn btn-outline-warning", data: { turbo: "false" } %>
 
-          <%= button_to 'Выйти', destroy_user_session_path, method: :delete, class: "btn btn-outline-danger", data: { turbo: "false" } %>
+          <%= link_to 'Выйти', destroy_user_session_path, method: :delete, class: "btn btn-outline-danger", data: { turbo: "false" } %>
 
         <% else %>
-          <%= button_to 'Зарегистрироваться', new_user_registration_path, class: "btn btn-outline-success", method: :get, data: { turbo: "false" } %>
-          <%= button_to 'Войти', new_user_session_path, class: "btn btn-outline-success", method: :get, data: { turbo: "false" } %>
+          <%= link_to 'Зарегистрироваться', new_user_registration_path, class: "btn btn-outline-success", data: { turbo: "false" } %>
+          <%= link_to 'Войти', new_user_session_path, class: "btn btn-outline-success", data: { turbo: "false" } %>
 
         <% end %>
         </div>

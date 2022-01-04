@@ -1,21 +1,21 @@
 module UserMailerHelper
   def user_mailer(record, action, opts={})
 
-    html = render_to_string template: "users/mailer/#{action.to_s}"
+    html = render_to_string template: "devise/mailer/#{action.to_s}"
     document = Roadie::Document.new html
     document = document.transform
 
     @mail_letter.sender = {
-      "name": "FindWorker",
-      "email": "find-worker@mail.com"
+      "name": "Planet of Vitamins",
+      "email": "planet.vitamins.63@example.com"
     }
     @mail_letter.to = [{ "email": @to_email }]
     @mail_letter.html_content = document
     @mail_letter.text_content = document
     @mail_letter.subject = @subject
     @mail_letter.reply_to = {
-      "email": "find-worker@mail.com",
-      "name": "FindWorker"
+      "email": "planet.vitamins.63@example.com",
+      "name": "Planet of Vitamins"
     }
 
     begin
