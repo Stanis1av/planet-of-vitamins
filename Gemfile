@@ -30,6 +30,9 @@ gem "jbuilder"
 # Use Devise to authenticate Users
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
+# Use Figaro to hide confidential information
+gem 'figaro'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
