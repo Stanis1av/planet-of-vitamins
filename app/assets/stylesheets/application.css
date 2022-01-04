@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.alert dl, ol, ul {
+     margin-bottom: 0rem;
+   }
