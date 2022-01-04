@@ -33,6 +33,11 @@ gem 'devise', github: 'heartcombo/devise', branch: 'main'
 # Use Figaro to hide confidential information
 gem 'figaro'
 
+# Use the following gems to send mails:
+gem 'sib-api-v3-sdk' # Sendinblue API
+gem 'addressable'#, '~> 2.7.0' # 'sib-api-v3-sdk' requires the "addressable" dependency to work
+gem 'roadie'#, '~> 4.0' # Comfortable CSS integration with mails
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
