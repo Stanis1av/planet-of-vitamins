@@ -1,7 +1,40 @@
-<p>Hello <%= @email %>!</p>
+<table border="0" cellpadding="0" cellspacing="0" class="body">
+  <tr>
+    <td>&nbsp;</td>
+    <td class="container">
+      <div class="content">
 
-<% if @resource.try(:unconfirmed_email?) %>
-  <p>We're contacting you to notify you that your email is being changed to <%= @resource.unconfirmed_email %>.</p>
-<% else %>
-  <p>We're contacting you to notify you that your email has been changed to <%= @resource.email %>.</p>
-<% end %>
+        <!-- START CENTERED WHITE CONTAINER -->
+        <span class="preheader"><%= t('.title') %></span>
+        <table class="main">
+
+          <!-- START MAIN CONTENT AREA -->
+          <tr>
+            <td class="wrapper">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <p><%= t('.welcome') %> <%= @to_email %>.</p>
+                    <% if @user.try(:unconfirmed_email?) %>
+                      <p><%= t('.info_text') %> <%= @user.unconfirmed_email %>.</p><br/>
+                    <% else %>
+                      <p><%= t('.info_text') %> <%= @user.email %>.</p><br/>
+                    <% end %>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        <!-- END MAIN CONTENT AREA -->
+        </table>
+
+
+
+      <!-- END CENTERED WHITE CONTAINER -->
+      </div>
+    </td>
+    <!-- <td>&nbsp;</td> -->
+  </tr>
+</table>
+
