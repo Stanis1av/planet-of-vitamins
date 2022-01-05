@@ -16,7 +16,7 @@ ru:
         last_sign_in_ip: IP последнего входа
         locked_at: Дата блокировки
         password: Пароль
-        password_confirmation: Подтверждение пароля
+        password_confirmation: Подтверждённый пароль
         remember_created_at: Дата создания запоминания
         remember_me: Запомнить меня
         reset_password_sent_at: Дата отправки сброса пароля

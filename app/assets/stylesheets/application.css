@@ -15,5 +15,6 @@
  */
 
 .alert dl, ol, ul {
-     margin-bottom: 0rem;
+     margin-bottom: 0;
    }
+

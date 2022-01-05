@@ -12,6 +12,7 @@
     <%= f.label :password, t('.enter_password'), class: "form-label" %>
     <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: t('.enter_password') %>
   </div>
+  <br/>
 
   <% if devise_mapping.rememberable? %>
     <div class="form-group">
@@ -29,5 +30,6 @@
   </div>
 <% end %>
 </div>
+<br/>
 
 <%= render "devise/shared/links" %>
