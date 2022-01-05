@@ -18,7 +18,7 @@ class UserMailer < Devise::Mailer
     @user = record
     @token = token
     @to_email = @user.email
-    @subject = t('users.mailer.confirmation_instructions.subject')
+    @subject = t('devise.mailer.confirmation_instructions.subject')
 
     user_mailer(record, :confirmation_instructions, opts)
   end
@@ -27,7 +27,7 @@ class UserMailer < Devise::Mailer
     @user = record
     @token = token
     @to_email = @user.email
-    @subject = t('users.mailer.reset_password_instructions.subject')
+    @subject = t('devise.mailer.reset_password_instructions.subject')
 
     user_mailer(record, :reset_password_instructions, opts)
   end
@@ -36,7 +36,7 @@ class UserMailer < Devise::Mailer
     @user = record
     @token = token
     @to_email = @user.email
-    @subject = t('users.mailer.unlock_instructions.subject')
+    @subject = t('devise.mailer.unlock_instructions.subject')
 
     user_mailer(record, :unlock_instructions, opts)
   end
@@ -44,7 +44,7 @@ class UserMailer < Devise::Mailer
   def email_changed(record, opts = {})
     @user = record
     @to_email = @user.email
-    @subject = t('users.mailer.email_changed.subject')
+    @subject = t('devise.mailer.email_changed.subject')
 
     user_mailer(record, :email_changed, opts)
   end
@@ -52,7 +52,7 @@ class UserMailer < Devise::Mailer
   def password_change(record, opts = {})
     @user = record
     @to_email = @user.email
-    @subject = t('users.mailer.password_change.subject')
+    @subject = t('devise.mailer.password_change.subject')
 
     user_mailer(record, :password_change, opts)
   end
