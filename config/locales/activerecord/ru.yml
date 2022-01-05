@@ -1,0 +1,88 @@
+ru:
+  activerecord:
+    attributes:
+      user:
+        confirmation_sent_at: Дата отправки подтверждения
+        confirmation_token: Токен подтверждения
+        confirmed_at: Дата подтверждения
+        created_at: Дата создания
+        current_password: Текущий пароль
+        current_sign_in_at: Дата текущего входа
+        current_sign_in_ip: IP текущего входа
+        email: Почтовый адрес
+        encrypted_password: Зашифрованный пароль
+        failed_attempts: Неудачные попытки
+        last_sign_in_at: Дата последнего входа
+        last_sign_in_ip: IP последнего входа
+        locked_at: Дата блокировки
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+        remember_created_at: Дата создания запоминания
+        remember_me: Запомнить меня
+        reset_password_sent_at: Дата отправки сброса пароля
+        reset_password_token: Токен сброса пароля
+        sign_in_count: Количество входов
+        unconfirmed_email: Неподтвержденный email
+        unlock_token: Токен разблокировки
+        updated_at: Дата обновления
+    # models:
+    #   user:
+    #     user: Пользователь
+    #     other: Пользователи
+    errors:
+      messages:
+        record_invalid: 'Возникли ошибки: %{errors}'
+        restrict_dependent_destroy:
+          has_one: 'Невозможно удалить запись, так как существует зависимость: %{record}'
+          has_many: 'Невозможно удалить запись, так как существуют зависимости: %{record}'
+      models:
+        user:
+          attributes:
+            password_confirmation:
+              confirmation: "и пароль не совпадают"
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: должно быть принято
+      blank: не может быть пустым
+      present: должно быть пустым
+      # confirmation: "%{attribute} не совпадает с"
+      empty: не может быть пустым
+      equal_to: должно быть равно %{count}
+      even: должно быть четным
+      exclusion: зарезервировано
+      greater_than: должно быть больше чем %{count}
+      greater_than_or_equal_to: должно быть больше, либо равно %{count}
+      inclusion: не включено в список
+      invalid: не верное
+      less_than: должно быть меньше, чем %{count}
+      less_than_or_equal_to: должно быть меньше или равно %{count}
+      model_invalid: "Ошибка проверки: %{errors}"
+      not_a_number: не является числом
+      not_an_integer: должно быть целым
+      odd: должно быть не четным
+      required: должно присутствовать
+      taken: уже занят
+      too_long:
+        one: слишком длинная (максимум — 1 знак)
+        few: слишком длинная (максимум — %{count} символов)
+        many: слишком длинная (максимум — %{count} символов)
+        other: слишком длинная (максимум — %{count} символов)
+      too_short:
+        one: слишком короткий (минимум — 1 знак)
+        few: слишком короткий (минимум %{count} символов)
+        many: слишком короткий (минимум %{count} символов)
+        other: слишком короткий (минимум %{count} символов)
+      wrong_length:
+        one: не верная длина (должен быть 1 символ)
+        few: не верная длина (должно быть %{count} символов)
+        many: не верная длина (должно быть %{count} символов)
+        other: не верная длина (должно быть %{count} символов)
+      other_than: не должно равняться %{count}
+    template:
+      body: "Со следующими полями возникли проблемы:"
+      header:
+        one: 1 ошибка не позволила сохранить %{model}
+        few: "%{count} ошибок не позволили сохранить %{model}"
+        many: "%{count} ошибок не позволили сохранить %{model}"
+        other: "%{count} ошибок не позволили сохранить %{model}"

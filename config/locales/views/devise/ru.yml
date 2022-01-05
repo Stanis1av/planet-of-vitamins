@@ -1,0 +1,98 @@
+ru:
+  devise:
+    confirmations:
+      new:
+        title: Повторно отправить инструкции по подтверждению
+        enter_email: Введите почтовый адрес
+        resend_confirmation_instructions: Отправить инструкцию
+    passwords:
+      edit:
+        title: Измените свой пароль
+        enter_new_password: Введите новый пароль
+        confirm_new_password: Подтвердите новый пароль
+        change_my_password: Сменить мой пароль
+      new:
+        title: Забыли свой пароль?
+        enter_your_email: Введите свою электронную почты
+        send_confirmation_instructions: Получить письмо с подтверждением
+    registrations:
+      edit:
+        title: Редактировать аккаунт
+        current_email: Почтовый адрес
+        enter_new_password: Введите новый пароль
+        confirm_new_password: Подтвердите новый пароль
+        characters_min: символов минимум
+        current_password: Введите текущий пароль
+        are_you_sure: Вы уверены?
+        cancel_my_account: Удалить аккаунт
+        leave_blank_if_you_don_t_want_to_change_it: оставьте пустым, если вы не хотите его менять
+        unhappy: Недовольны?
+        update: Обновить
+        back: Назад
+      new:
+        title: Зарегистрироваться
+        enter_email: Введите email адрес
+        enter_password: Введите пароль
+        confirm_password: Подтвердить свой пароль
+        sign_up: Зарегистрироваться
+    sessions:
+      new:
+        title: Войти
+        enter_email: Введите адрес электронной почты
+        enter_password: Введите пароль
+        remember_me: Запомнить меня
+        sign_in: Войти
+    shared:
+      links:
+        back: Назад
+        didn_t_receive_confirmation_instructions: Не получили инструкции для подтверждения?
+        didn_t_receive_unlock_instructions: Не получили инструкции по разблокировке?
+        forgot_your_password: Забыли пароль?
+        sign_in: Уже зарегистрированны?
+        sign_in_link: Войти
+        sign_in_with_provider: Войти с помощью %{provider}?
+        sign_up: Нет акаунта?
+        sign_up_link: Зарегистрироваться
+        confirmation: Пароли не совпадают # ???
+    unlocks:
+      new:
+        title: Повторная отправка инструкций по разблокировке
+        enter_email: Введите электронный адрес
+        resend_unlock_instructions: Отправить инструкцию повтороно
+    mailer:
+      confirmation_instructions:
+        subject: Подтвердите свой аккаунт
+        title: Подтвердите свою учётную запись в "Планете Витаминов".
+        welcome: Добро пожаловать,
+        gratitude: Благодарим за присоединение к "Планете Витаминов".
+        info_text: "Мы хотим подтвердить ваш адрес электронной почты. Чтобы подтвердить свой адрес электронной почты и завершить регистрацию, нажмите на кнопку ниже."
+        confirm_link: Подтвердить мой аккаунт
+        ignore_text: Если это не вы, то просто проигнорируйте это письмо.
+      email_changed:
+        subject: Емэил адрес изменён
+        title: Ваш адрес электронной почты был изменён
+        welcome: Здравствуйте
+        info_text: Сообщаем вам, что ваш адрес электронной почты изменился на
+      password_change:
+        subject: Пароль изменён
+        title: Ваш пароль был изменен.
+        welcome: Здравствуйте
+        info_text: Мы связываемся с вами, чтобы сообщить, что ваш пароль был изменен.
+      reset_password_instructions:
+        subject: Сброс пароля
+        title: Инструкции по сбросу пароля на "Планете Витаминов".
+        welcome: Здравствуйте
+        info_text: Кто-то запросил ссылку для изменения пароля. Нажмите на ссылку ниже, чтобы изменить свой пароль.
+        reset_link: Сбросить мой пароль
+        ignore_text: Пожалуйста, проигнорируйте это письмо, если вы не запрашивали новый пароль.
+        add_info_text: Пароль не будет изменен, пока вы не перейдете по ссылке выше и не установите новый пароль.
+      unlock_instructions:
+        subject: Ваш аккаунт заблокирован
+        title: Разблокируйте свою учетную запись на "Планете Витаминов".
+        welcome: Здравствуйте
+        info_text: Ваш аккаунт был заблокирован из-за большого количества неудачных попыток входа в учетную запись.
+        instructions_text: 'Перейдите по ссылке ниже, чтобы разблокировать свой аккаунт:'
+        unlock_link: Разблокируйте мой аккаунт
+    # omniauth_callbacks:
+    #   failure: Вы не можете войти в систему с учётной записью из %{kind}, так как %{reason}.
+    #   success: Вход в систему выполнен с учётной записью из %{kind}.
