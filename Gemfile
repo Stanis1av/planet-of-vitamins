@@ -30,6 +30,10 @@ gem "jbuilder"
 # Use Devise to authenticate Users
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
+# Use Omniauth
+gem 'omniauth-facebook'
+gem 'omniauth-rails_csrf_protection'
+
 # Use Figaro to hide confidential information
 gem 'figaro'
 

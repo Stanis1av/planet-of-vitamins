@@ -38,6 +38,7 @@ ru:
         sign_up: Зарегистрироваться
     sessions:
       new:
+        log_in_with_provider: Войти с помощью
         title: Войти
         enter_email: Введите адрес электронной почты
         enter_password: Введите пароль
@@ -51,7 +52,6 @@ ru:
         forgot_your_password: Забыли пароль?
         sign_in: Уже зарегистрированны?
         sign_in_link: Войти
-        sign_in_with_provider: Войти с помощью %{provider}?
         sign_up: Нет акаунта?
         sign_up_link: Зарегистрироваться
         confirmation: Пароли не совпадают # ???
@@ -94,6 +94,6 @@ ru:
         info_text: Ваш аккаунт был заблокирован из-за большого количества неудачных попыток входа в учетную запись.
         instructions_text: 'Перейдите по ссылке ниже, чтобы разблокировать свой аккаунт:'
         unlock_link: Разблокируйте мой аккаунт
-    # omniauth_callbacks:
-    #   failure: Вы не можете войти в систему с учётной записью из %{kind}, так как %{reason}.
-    #   success: Вход в систему выполнен с учётной записью из %{kind}.
+    omniauth_callbacks:
+      failure: Вы не можете войти в систему с учётной записью из %{kind}, так как %{reason}.
+      success: Вход в систему выполнен с учётной записью из %{kind}.
