@@ -9,7 +9,7 @@ class User < ApplicationRecord
          :rememberable,
          :validatable,
          :timeoutable,
-         :omniauthable, omniauth_providers: [:facebook]
+         :omniauthable, omniauth_providers: [:facebook, :google_oauth2, :vkontakte]
 
   # Add password requirements:
 

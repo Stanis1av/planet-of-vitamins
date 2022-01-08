@@ -275,6 +275,8 @@ Devise.setup do |config|
   # config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_APP_SECRET"], scope: 'email'
   #=============================================================================
   config.omniauth :facebook, ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET'], scope: 'email'
+  config.omniauth :google_oauth2, ENV['GOOGLE_APP_ID'], ENV['GOOGLE_APP_SECRET'], scope: 'email'
+  config.omniauth :vkontakte, ENV['VKONTAKTE_APP_ID'], ENV['VKONTAKTE_APP_SECRET'], scope: 'email'
   #=============================================================================
   # config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"],
   # callback_url: "http://localhost:3000/auth/facebook/callback"

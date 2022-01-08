@@ -32,6 +32,8 @@ gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
 # Use Omniauth
 gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-vkontakte'
 gem 'omniauth-rails_csrf_protection'
 
 # Use Figaro to hide confidential information

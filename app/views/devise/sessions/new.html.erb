@@ -3,9 +3,20 @@
 
   <h1 class="h3 mb-3 fw-normal"><%= t('.title') %></h1>
 
-  <br/>
-  <%= link_to t(".log_in_with_provider") + ' Facebook?', user_facebook_omniauth_authorize_path, method: :post %>
-  <br/>
+  <div class="col-md-5">
+    <%= link_to user_facebook_omniauth_authorize_path, class: "social-button", id: "facebook-connect", method: :post do %>
+      <span><%= t(".log_in_with_provider") + ' Facebook' %></span>
+    <% end %>
+    <%= link_to user_google_oauth2_omniauth_authorize_path, class: "social-button", id: "google-connect", method: :post do %>
+      <span><%= t(".log_in_with_provider") + ' Google' %></span>
+    <% end %>
+    <%= link_to user_vkontakte_omniauth_authorize_path, class: "social-button", id: "linkedin-connect", method: :post do %>
+      <span><%= t(".log_in_with_provider") + ' VKontakte' %></span>
+    <% end %>
+  </div>
+
+  <div class="" id="or">или</div>
+
   <div class="col-md-5">
     <%= f.label :email, t('.enter_email'), class: "form-label" %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: t('.enter_email') %>
